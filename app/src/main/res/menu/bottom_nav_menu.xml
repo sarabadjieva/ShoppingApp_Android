@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <item
+        android:id="@+id/btn_cart"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_shopping_cart_24"
+        android:title="cart"
+        app:showAsAction="always"
+        android:onClick="onOptionsItemSelected"/>
+    <item
+        android:id="@+id/btn_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="home"
+        app:showAsAction="always"
+        android:onClick="onOptionsItemSelected"/>
+    <item
+        android:id="@+id/btn_favorites"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_favorite_border_24"
+        android:title="favorites"
+        app:showAsAction="always"
+        android:onClick="onOptionsItemSelected"/>
+</menu>

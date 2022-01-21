@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidApp_CITB704/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.265625" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidApp_CITB704/app/src/main/res/drawable-v24/ic_silk_black.xml" value="0.203125" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidApp_CITB704/app/src/main/res/drawable/category_button.xml" value="0.28125" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidApp_CITB704/app/src/main/res/drawable/empty_tall_divider.xml" value="0.246875" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidApp_CITB704/app/src/main/res/drawable/ic_baseline_auto_awesome_24.xml" value="0.34739583333333335" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidApp_CITB704/app/src/main/res/drawable/ic_baseline_delete_outline_24.xml" value="0.34739583333333335" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidApp_CITB704/app/src/main/res/drawable/ic_baseline_favorite_border_24.xml" value="0.34739583333333335" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidApp_CITB704/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.34739583333333335" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidApp_CITB704/app/src/main/res/drawable/ic_baseline_shopping_cart_24.xml" value="0.26875" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidApp_CITB704/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.26875" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidApp_CITB704/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.26875" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidApp_CITB704/app/src/main/res/drawable/ic_launcher_background.xml" value="0.265625" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidApp_CITB704/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.26875" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidApp_CITB704/app/src/main/res/drawable/repeatable_background.xml" value="0.2552083333333333" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidApp_CITB704/app/src/main/res/drawable/silk_repeatable.xml" value="0.2552083333333333" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidApp_CITB704/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.1536144578313253" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidApp_CITB704/app/src/main/res/layout-w936dp/activity_login.xml" value="0.2687353629976581" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidApp_CITB704/app/src/main/res/layout/activity_bill.xml" value="0.2390625" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidApp_CITB704/app/src/main/res/layout/activity_bottom_navigation.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidApp_CITB704/app/src/main/res/layout/activity_category.xml" value="0.33" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidApp_CITB704/app/src/main/res/layout/activity_home.xml" value="0.33" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidApp_CITB704/app/src/main/res/layout/activity_item.xml" value="0.24947916666666667" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidApp_CITB704/app/src/main/res/layout/activity_login.xml" value="0.2390625" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidApp_CITB704/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidApp_CITB704/app/src/main/res/layout/category_cell.xml" value="0.24427083333333333" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidApp_CITB704/app/src/main/res/layout/fragment_cart.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidApp_CITB704/app/src/main/res/layout/fragment_categories.xml" value="0.2755208333333333" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidApp_CITB704/app/src/main/res/layout/fragment_category_button.xml" value="0.26510416666666664" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidApp_CITB704/app/src/main/res/layout/fragment_dashboard.xml" value="0.25052083333333336" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidApp_CITB704/app/src/main/res/layout/fragment_favorites.xml" value="0.24427083333333333" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidApp_CITB704/app/src/main/res/layout/fragment_home.xml" value="0.2984375" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidApp_CITB704/app/src/main/res/layout/fragment_homepage.xml" value="0.18" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidApp_CITB704/app/src/main/res/layout/fragment_notifications.xml" value="0.2984375" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidApp_CITB704/app/src/main/res/layout/fragment_single_category.xml" value="0.23958333333333334" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidApp_CITB704/app/src/main/res/layout/item_cell.xml" value="0.5" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidApp_CITB704/app/src/main/res/layout/item_cell_fragment.xml" value="0.25625" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidApp_CITB704/app/src/main/res/layout/item_cell_long.xml" value="0.33" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidApp_CITB704/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidApp_CITB704/app/src/main/res/menu/menu.xml" value="0.3375" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidApp_CITB704/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.25833333333333336" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidApp_CITB704/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.203125" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
