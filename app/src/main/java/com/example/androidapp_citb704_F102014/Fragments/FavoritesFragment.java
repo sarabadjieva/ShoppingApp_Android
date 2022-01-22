@@ -50,9 +50,6 @@ public class FavoritesFragment extends Fragment {
         mAdapter = new ItemsAdapter(items, 1);
         mRecyclerView.setAdapter(mAdapter);
 
-        //add drawables
-        mRecyclerView.addItemDecoration(new DividerItemDecoration(getContext(), DividerItemDecoration.VERTICAL));
-        mRecyclerView.addItemDecoration(new DividerItemDecoration(getContext(), DividerItemDecoration.HORIZONTAL));
         return view;
     }
 }

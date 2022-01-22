@@ -6,6 +6,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 import androidx.annotation.Nullable;
 
@@ -28,12 +29,32 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     public final static String COLUMN_ITEM_COLORS = "colors";
     public final static String COLUMN_ITEM_PHOTO_URL = "photoUrl";
 
-
     private static ArrayList<ItemData> cachedFav = new ArrayList<>();
     private static ArrayList<ItemData> cachedCart = new ArrayList<>();
 
     public ArrayList<ItemData> getItemsInFavDB() {return cachedFav;}
     public ArrayList<ItemData> getItemsInCartDB() {return cachedCart;}
+
+    public boolean hasItemInFav(ItemData itemData){
+
+        for (ItemData addedData : cachedFav
+        ) {
+            if (addedData.getId().equalsIgnoreCase(itemData.getId())) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean hasItemInCart(ItemData itemData){
+        for (ItemData addedData : cachedCart
+        ) {
+            if (addedData.getId().equals(itemData.getId())) {
+                return true;
+            }
+        }
+        return false;
+    }
 
     public DataBaseHelper(@Nullable Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -71,13 +92,8 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 
     }
 
-    public void addToFavoritesDB(ItemData itemData) {
-        for (ItemData addedData : cachedFav
-        ) {
-            if (addedData.getId() == itemData.getId()) {
-                return;
-            }
-        }
+    public boolean addToFavoritesDB(ItemData itemData) {
+        if (hasItemInFav(itemData)) return false;
         cachedFav.add(itemData);
 
         SQLiteDatabase database = this.getWritableDatabase();
@@ -91,12 +107,14 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         database.insert(TABLE_NAME_FAVORITES, null, values);
 
         database.close();
+
+        return true;
     }
 
     public void removeFromFavoritesDB(ItemData itemData) {
         for (ItemData addedData : cachedFav
         ) {
-            if (addedData.getId() == itemData.getId()) {
+            if (addedData.getId().equals(itemData.getId())) {
                 cachedFav.remove(addedData);
                 break;
             }
@@ -108,13 +126,8 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         database.close();
     }
 
-    public void addToCartDB(ItemData itemData) {
-        for (ItemData addedData : cachedCart
-        ) {
-            if (addedData.getId() == itemData.getId()) {
-                return;
-            }
-        }
+    public boolean addToCartDB(ItemData itemData) {
+        if (hasItemInCart(itemData)) return false;
         cachedCart.add(itemData);
 
         SQLiteDatabase database = this.getWritableDatabase();
@@ -129,13 +142,14 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         database.insert(TABLE_NAME_CART, null, values);
 
         database.close();
+        return true;
     }
 
     public void removeFromCartDB(ItemData itemData) {
 
         for (ItemData addedData : cachedCart
         ) {
-            if (addedData.getId() == itemData.getId()) {
+            if (addedData.getId().equals(itemData.getId())) {
                 cachedCart.remove(addedData);
                 break;
             }

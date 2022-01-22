@@ -25,6 +25,9 @@ public class CartFragment extends Fragment {
     public RecyclerView mRecyclerView;
     public ItemsAdapter mAdapter;
 
+    private static float priceAll = 0f;
+    private static TextView txtPrice;
+
     public CartFragment() {
         // Required empty public constructor
     }
@@ -48,22 +51,25 @@ public class CartFragment extends Fragment {
         ArrayList<ItemData> items = dbHelper.getItemsInCartDB();
         dbHelper.close();
 
-        float priceAll = 0f;
+        priceAll = 0f;
         for (ItemData item: items
              ) {
             priceAll += item.getPriceDouble();
         }
 
-        ((TextView)view.findViewById(R.id.cart_price_label)).setText(NumberFormat.getCurrencyInstance().format(priceAll));
+        txtPrice = ((TextView)view.findViewById(R.id.cart_price_label));
+        txtPrice.setText(NumberFormat.getCurrencyInstance().format(priceAll));
 
         mRecyclerView = view.findViewById(R.id.recycler_view_cart_items);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         mAdapter = new ItemsAdapter(items, 2);
         mRecyclerView.setAdapter(mAdapter);
 
-        //add drawables
-        mRecyclerView.addItemDecoration(new DividerItemDecoration(getContext(), DividerItemDecoration.VERTICAL));
-        mRecyclerView.addItemDecoration(new DividerItemDecoration(getContext(), DividerItemDecoration.HORIZONTAL));
         return view;
+    }
+
+    public static void RemoveFromCart(ItemData itemData){
+        priceAll -= itemData.getPriceDouble();
+        txtPrice.setText(NumberFormat.getCurrencyInstance().format(priceAll));
     }
 }
